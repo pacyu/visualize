@@ -21,5 +21,5 @@ py audio_visualize_3d.py
 # Demo
 
 ![demo1](demo/audio_visualize_1d.png)
-![demo2](demo/audio_visualize_1d.png)
-![demo3](demo/audio_visualize_1d.png)
+![demo2](demo/audio_visualize_2d.png)
+![demo3](demo/audio_visualize_3d.png)
