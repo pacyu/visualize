@@ -8,4 +8,4 @@ py audio_visualize_2d.py
 
 # Demo
 
-[!demo](demo/audio_visualize.mp4)
+![demo](demo/audio_visualize.mp4)
