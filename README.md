@@ -3,19 +3,15 @@ Get stream from sound card and draw waveform with matplotlib on python.
 
 # Usage
 ```python
-py audio_visual.py
+py run.py 1d
 ```
 or
 ```python
-py audio_visualize_1d.py
+py run.py 2d
 ```
 or
 ```python
-py audio_visualize_2d.py
-```
-or
-```python
-py audio_visualize_3d.py
+py run.py 3d
 ```
 
 # Demo
