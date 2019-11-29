@@ -1,2 +1,4 @@
 demo/*.mp4
 audio_visualize_*d.py
+__pycache__/
+__pycache__/*
