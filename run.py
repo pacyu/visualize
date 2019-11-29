@@ -13,4 +13,4 @@ if __name__ == "__main__":
         elif typed == '3d':
             run.audio_visualize_3d()
     else:
-        sys.stdout('run [options](1d | 2d | 3d)')
+        print('run.py [options](1d | 2d | 3d)')
