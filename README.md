@@ -2,15 +2,15 @@
 Get stream from sound card and draw waveform with matplotlib on python.
 
 # Usage
-```python
+```bash
 py run.py 1d
 ```
 or
-```python
+```bash
 py run.py 2d
 ```
 or
-```python
+```bash
 py run.py 3d
 ```
 
