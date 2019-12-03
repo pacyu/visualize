@@ -40,10 +40,10 @@ class AudioVisualize(object):
             y_detrend = detrend(data_int)
             box = np.ones(self.fwhm) / self.fwhm
             y_smooth = np.convolve(y_detrend, box, mode='same')
-            yft = np.fft.fft(y_smooth)
-            y_vals = yft[:self.chunk] / (256 * self.chunk)
-            ind = np.where(y_vals > np.mean(y_vals))
-            y_vals[ind[0]] *= 4
+            yft = np.abs(np.fft.fft(y_smooth))
+            y_vals = yft[:self.chunk] / (64 * self.chunk)
+            # ind = np.where(y_vals > np.mean(y_vals))
+            # y_vals[ind[0]] *= 4
             lf.set_ydata(y_vals)
 
             try:
@@ -71,9 +71,9 @@ class AudioVisualize(object):
             data_int = struct.unpack(str(self.chunk * 2) + 'B', data)
             y_detrend = detrend(data_int)
             yft = np.abs(np.fft.fft(y_detrend))
-            y_vals = yft / (256 * self.chunk)
-            ind = np.where(y_vals > np.mean(y_vals))
-            y_vals[ind[0]] *= 4
+            y_vals = yft / (64 * self.chunk)
+            # ind = np.where(y_vals > np.mean(y_vals))
+            # y_vals[ind[0]] *= 4
             lf.set_xdata(xf + y_vals * np.cos(t))
             lf.set_ydata(yf + y_vals * np.sin(t))
 
@@ -102,9 +102,9 @@ class AudioVisualize(object):
             data_int = struct.unpack(str(self.chunk * 2) + 'B', data)
             z_detrend = detrend(data_int)
             zf = np.abs(np.fft.fft(z_detrend))
-            z_vals = zf / (256 * self.chunk)
-            ind = np.where(z_vals > np.mean(z_vals))
-            z_vals[ind[0]] *= 4
+            z_vals = zf / (64 * self.chunk)
+            # ind = np.where(z_vals > np.mean(z_vals))
+            # z_vals[ind[0]] *= 4
             lf.set_xdata(xf)
             lf.set_ydata(yf)
             lf.set_3d_properties(z_vals)
