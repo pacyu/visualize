@@ -12,5 +12,7 @@ if __name__ == "__main__":
             run.audio_visualize_2d()
         elif typed == '3d':
             run.audio_visualize_3d()
+        elif typed == '2dr':
+            run.audio_visualize_2d_rainbow()
     else:
-        print('run.py [options](1d | 2d | 3d)')
+        print('run.py [options](1d | 2d | 3d | 2dr)')
