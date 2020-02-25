@@ -14,10 +14,6 @@ or
 ```bash
 $ py run.py 3d
 ```
-or
-```bash
-$ py run.py 2dr
-```
 
 # Demo
 [bilibili](https://www.bilibili.com/video/av77372866)
@@ -26,4 +22,3 @@ $ py run.py 2dr
 ![demo1](demo/audio_visualize_1d.png)
 ![demo2](demo/audio_visualize_2d.png)
 ![demo3](demo/audio_visualize_3d.png)
-![demo4](demo/audio_visualize_2dr.png)
