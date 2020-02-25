@@ -20,15 +20,15 @@ $ py run.py 3d
 ```
 or
 ```bash
-$ py run.py 1d /path/xxx.wav
+$ py run.py m1d /path/xxx.wav
 ```
 or
 ```bash
-$ py run.py 2d /path/xxx.wav
+$ py run.py m2d /path/xxx.wav
 ```
 or
 ```bash
-$ py run.py 3d /path/xxx.wav
+$ py run.py m3d /path/xxx.wav
 ```
 
 # Demo
