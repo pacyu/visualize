@@ -4,6 +4,10 @@ Get stream from sound card and draw waveform with matplotlib on python.
 # Usage
 ```bash
 $ git clone https://github.com/darkchii/visualize.git
+$ cd visualize
+```
+then
+```bash
 $ py run.py 1d
 ```
 or
