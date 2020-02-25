@@ -1,4 +1,5 @@
 demo/*.mp4
+demo/*2dr.png
 audio_visualize_*d.py
 __pycache__/
 __pycache__/*
