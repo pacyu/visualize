@@ -18,6 +18,18 @@ or
 ```bash
 $ py run.py 3d
 ```
+or
+```bash
+$ py run.py 1d /path/xxx.wav
+```
+or
+```bash
+$ py run.py 2d /path/xxx.wav
+```
+or
+```bash
+$ py run.py 3d /path/xxx.wav
+```
 
 # Demo
 [bilibili](https://www.bilibili.com/video/av77372866)
