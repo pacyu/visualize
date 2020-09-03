@@ -133,7 +133,7 @@ class AudioVisualize(object):
                 break
 
     def music_visualize_1d(self):
-        fig = plt.figure()
+        fig = plt.figure(facecolor='black')
         ax = fig.gca()
         norm = plt.Normalize(-1., 1.)
         lc = LineCollection([], cmap='cool', norm=norm)
@@ -158,7 +158,7 @@ class AudioVisualize(object):
 
     def music_visualize_2d(self):
         t = np.linspace(0, 2 * np.pi, self.window)
-        fig = plt.figure()
+        fig = plt.figure(facecolor='black')
         ax = fig.gca(projection='polar')
         ax.set_axis_off()
         lf, = ax.plot(t, np.zeros(self.window), lw=1, color='lightblue')
