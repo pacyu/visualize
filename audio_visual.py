@@ -12,8 +12,9 @@ from matplotlib.collections import LineCollection
 
 class AudioVisualize(object):
 
-    def __init__(self, filename: str = None, rate=1.):
+    def __init__(self, filename: str = None, rate=1., delay=4.):
         p = pyaudio.PyAudio()
+        self.record_delay = delay
         if filename is None:
             self.channels = 1
             self.rate = 48000
@@ -47,6 +48,7 @@ class AudioVisualize(object):
         ax.set_ylim(-0.5, 1.5)
         ax.set_axis_off()
         plt.show(block=False)
+        plt.pause(self.record_delay)
 
         while self.stream.is_active():
             data = self.stream.read(self.window)
@@ -79,6 +81,7 @@ class AudioVisualize(object):
         ax.set_ylim(-3, 3)
         ax.set_axis_off()
         plt.show(block=False)
+        plt.pause(self.record_delay)
 
         while self.stream.is_active():
             data = self.stream.read(self.window)
@@ -110,6 +113,7 @@ class AudioVisualize(object):
         ax.set_zlim(-0.2, 1.2)
         ax.set_axis_off()
         plt.show(block=False)
+        plt.pause(self.record_delay)
 
         while self.stream.is_active():
             data = self.stream.read(self.window)
@@ -141,6 +145,7 @@ class AudioVisualize(object):
         ax.set_axis_off()
         time = np.linspace(0, 2 * np.pi, self.window)
         ax.add_collection(lc)
+        plt.pause(self.record_delay)
 
         def update(frames):
             if self.stream.is_active():
@@ -162,6 +167,7 @@ class AudioVisualize(object):
         ax = fig.gca(projection='polar')
         ax.set_axis_off()
         lf, = ax.plot(t, np.zeros(self.window), lw=1, color='lightblue')
+        plt.pause(self.record_delay)
 
         def update(frames):
             if self.stream.is_active():
@@ -183,6 +189,7 @@ class AudioVisualize(object):
         ax.set_axis_off()
         lf, = ax.plot(x, y, np.zeros(self.window), lw=1, color='lightblue')
         lf2, = ax.plot(x, y, np.zeros(self.window), lw=1, color='orange')
+        plt.pause(self.record_delay)
 
         def update(frames):
             if self.stream.is_active():
