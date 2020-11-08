@@ -1,5 +1,5 @@
 # visualize
-Get stream from sound card and draw waveform with matplotlib on python.
+Get stream from sound card and draw waveform with matplotlib in python.
 
 # Usage
 
