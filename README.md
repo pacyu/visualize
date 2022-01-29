@@ -1,19 +1,22 @@
 # visualize
-Get stream from sound card and draw waveform with matplotlib in python.
+
+Reads stream from sound card and plots a waveform with matplotlib.
 
 # Usage
 
+```bash
+git clone https://github.com/darkchii/visualize.git
+cd visualize
+```
+
+then
 
 ```bash
-$ git clone https://github.com/darkchii/visualize.git
-$ cd visualize
-```
-then
-```bash
-$ py run.py -h
+py run.py -h
 ```
 
 output:
+
 ```bash
 usage: Audio visualization [-h] [-e EFFECT] [-f FILENAME] [-r PLAYBACK_RATE]
                            [-p PAUSE]
@@ -32,31 +35,42 @@ optional arguments:
 ```
 
 e.g.
+
 ```bash
-$ py run.py -e 1d
-```
-or
-```bash
-$ py run.py -e 2d
-```
-or
-```bash
-$ py run.py -e 3d
-```
-or
-```bash
-$ py run.py -e 1d -f "/path/xxx.mp3" -r 1.2
-```
-or
-```bash
-$ py run.py -e 2d -f "/path/xxx.mp3" -r 1.2
-```
-or
-```bash
-$ py run.py -e 3d -f "/path/xxx.mp3" -r 1.2
+py run.py -e 1d
 ```
 
-Parameters Description: 
+or
+
+```bash
+py run.py -e 2d
+```
+
+or
+
+```bash
+py run.py -e 3d
+```
+
+or
+
+```bash
+py run.py -e 1d -f "/path/xxx.mp3" -r 1.2
+```
+
+or
+
+```bash
+py run.py -e 2d -f "/path/xxx.mp3" -r 1.2
+```
+
+or
+
+```bash
+py run.py -e 3d -f "/path/xxx.mp3" -r 1.2
+```
+
+Parameters Description:
 
   1. Select visualization style.
   2. Audio file path.(output device mode only)
@@ -64,9 +78,11 @@ Parameters Description:
   4. Delay time to play the animation.
 
 # Demo
+
 [bilibili](https://www.bilibili.com/video/av77372866)
 
 # Screenshot
+
 ![demo1](demo/audio_visualize_1d.png)
 ![demo2](demo/audio_visualize_2d.png)
 ![demo3](demo/audio_visualize_3d.png)
