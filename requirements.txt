@@ -1,0 +1,6 @@
+pyaudio
+pydub
+numpy
+scipy
+tk
+matplotlib

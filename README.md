@@ -2,14 +2,13 @@
 
 Reads stream from sound card and plots a waveform with matplotlib.
 
+# Installation
+`git clone https://github.com/pacyu/visualize.git` \
+`cd visualize` \
+`pip install -r requirements.txt` \
+`sudo apt-get install python3-tk` 
+
 # Usage
-
-```bash
-git clone https://github.com/darkchii/visualize.git
-cd visualize
-```
-
-then
 
 ```bash
 py run.py -h
